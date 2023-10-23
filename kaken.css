@@ -1,0 +1,337 @@
+/* 全体のスタイル */
+body {
+    font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    color: #333;
+}
+
+/* ヘッダー */
+header {
+    background-color: #adcc33;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 200px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* フッター */
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* 入力フォーム */
+input[type="text"], input[type="email"], textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+
+
+
+/* CSS */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.recipe-card {
+  background-color: #fff8cf;
+  padding: 16px;
+  margin-bottom: 16px;
+  opacity: 0;
+  animation: fade-in 1s forwards;
+}
+
+.recipe-card img {
+  width: 100%;
+}
+
+.recipe-card h2 {
+  font-size: 24px;
+  margin-top: 8px;
+}
+
+.recipe-card p {
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+@media (min-width: 768px) {
+  .recipe-card {
+    width: 48%;
+    margin-right: 16px;
+  }
+
+  .recipe-card:nth-child(even) {
+    margin-right: 0;
+  }
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+/* ボディ全体のフォントと背景色を指定 */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+}
+
+/* ページ全体を中央に配置 */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* 見出しのスタイルを指定 */
+h1, h2, h3 {
+  color: #333;
+}
+
+/* パラグラフのスタイルを指定 */
+p {
+  line-height: 1.6;
+  color: #666;
+}
+
+/* リンクのスタイルを指定 */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* リンクにホバー時のスタイルを指定 */
+a:hover {
+  text-decoration: underline;
+}
+}
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fade-in {
+  animation: fadeIn 1s;
+}
+
+
+
+
+/* セクションのスタイリング */
+.section {
+  padding: 40px;
+}
+
+/* フォームのスタイリング */
+.form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* エラーメッセージのスタイリング */
+.error-message {
+  color: red;
+}
+
+/* アイコンのスタイリング */
+.icon {
+  font-size: 24px;
+  color: #000;
+}
+
+.gnavi li a{
+    /*線の基点とするためrelativeを指定*/
+  position: relative;
+}
+
+.gnavi li.current a,
+.gnavi li a:hover{
+  color:#0481A2;
+}
+
+.gnavi li a::after {
+    content: '';
+    /*絶対配置で線の位置を決める*/
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    /*線の形状*/
+    width: 80%;
+    height: 2px;
+    background:#0481A2;
+    /*アニメーションの指定*/
+    transition: all .3s;
+    transform: scale(0, 1);/*X方向0、Y方向1*/
+    transform-origin: center top;/*上部中央基点*/
+}
+
+/*現在地とhoverの設定*/
+.gnavi li.current a::after,
+.gnavi li a:hover::after {
+    transform: scale(1, 1);/*X方向にスケール拡大*/
+}
+
+
+
+/*========= 検索窓のためのCSS ===============*/
+
+/*検索窓のエリア*/
+ #search-wrap {
+     position: absolute;/*絶対配置にして*/
+	 z-index: 2;/*最前面に設定。数字は変更可*/
+	 top:10px;
+	 right:10px;
+}
+
+/*テキスト入力input設定*/
+ #search-text{
+	-webkit-appearance:none;/*SafariやChromeのデフォルトの設定を無効*/
+	width: 60px;/*テキスト入力エリアが伸びる前の横幅*/
+	height: 60px;
+    padding: 20px;
+	border: none;
+	background:#fff url("../img/icon_search.svg") no-repeat 17px center;/*虫眼鏡アイコンを背景に表示*/
+	background-size: 25px 25px;
+	transition: all 0.5s;/*transitionを使ってスムースに伸ばす*/
+	outline: none;
+	cursor: pointer;/*カーソルを指マークに*/
+}
+
+/*テキスト入力inputにフォーカスした時の形状*/
+ #search-text:focus {
+	width: 250px;/*テキスト入力エリアが伸びる後の横幅*/
+	padding: 20px 0 20px 60px;
+	box-shadow: 0 2px rgba(6,0,1,.26);
+}
+
+
+
+
+
+body{
+	animation: bgchange 20s ease infinite;/*変化の時間を変更したい場合は20sの部分を好きな時間に変更*/
+}
+@keyframes bgchange{
+      0%   {background:#FEE7E7;}/*変化させたい色*/
+      25%  {background:#FEE7E7;}/*変化させたい色*/
+      50%  {background:#FEE7E7;}/*変化させたい色*/
+      75%  {background:#FEE7E7;}/*変化させたい色*/
+      90%  {background:#FEE7E7;}/*変化させたい色*/
+      100% {background:#FEE7E7;}変化させたい色*/
+}
+
+
+
+@charset "utf-8";
+
+a{
+  color: #333;
+}
+
+/*========= particle js を描画するエリア設定 ===============*/
+
+html,body{
+  height: 100%;/*高さを100%にして描画エリアをとる*/
+}
+
+#particles-js{ 
+  position:fixed;/*描画固定*/
+  z-index:-1;/*描画を一番下に*/
+  width: 100%;
+  height: 100%;
+  background-color:#FEE7E7;/*背景色*/
+}
+
+#wrapper{
+  position: relative;/*描画を#particles-jsよりも上にするためposition:relative;を指定*/
+  z-index: 1;/*z-indexの数字を大きくすることで描画を#particles-jsよりも上に*/
+  width:100%;
+  height: 100%;
+}
+
+
+
+
+    /* ボタンのスタイル */
+button {
+    background-color: #3498db; /* ボタンの背景色 */
+    color: #fff; /* ボタンのテキスト色 */
+    padding: 10px 20px; /* ボタンのパディング（上下左右） */
+    border: none; /* ボタンのボーダーを削除 */
+    border-radius: 5px; /* ボタンの角を丸くする */
+    cursor: pointer; /* ホバー時にカーソルをポインターに変更 */
+    margin-right: 10px; /* ボタン間の右マージン */
+}
+
+/* ボタンのホバー時のスタイル */
+button:hover {
+    background-color: #2980b9; /* ホバー時の背景色 */
+}
+
+/* 特定のボタンにスタイルを適用する例 */
+button:nth-child(2) {
+    background-color: #e74c3c; /* 2番目のボタンの背景色を変更 */
+    margin-right: 0; /* 右マージンを削除 */
+}
