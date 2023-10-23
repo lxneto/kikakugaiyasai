@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>規格外野菜の良さを発信するウェブサイト</title>
+    <link rel="stylesheet" href="kaken.css">
+</head>
+<header>
+    <h1>規格外の野菜の良さ</h1>
+    <nav>
+        <ul class="gnavi">
+            <li><a href="kikaku.html">なぜ規格外の野菜が大切なのか？</a></li>
+            <li><a href="kikaku.html">規格外の野菜のメリット</a></li>
+            <li><a href="recipes.html">規格外の野菜を使ったレシピ</a></li>
+            <li><a href="kikaku.html">規格外の野菜を購入する方法</a></li>
+            <li><a href="kikaku.html">規格外野菜とは？</a></li>
+            <li><a href="kikaku.html">規格外野菜を購入する場所</a></li>
+            <li><a href="search.html">野菜を探す</a></li>
+            <li><a href="kikaku.html">このサイトについて</a></li>
+            <li><a href="kikaku.html">お問い合わせ</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+<div id="particles-js"></div>
+<div id="wrapper">
+<div id="search-wrap">
+<form role="search" method="get" action="">
+<input type="text" value="" name="" id="search-text">
+</form>
+<!--/search-wrap--></div>
+<main>
+	<body>
+		<section id="filter">
+	<h2>野菜を絞り込む</h2>
+		<ul>
+			<li><button onclick="filterVegetables('all')">すべて</button></li>
+			<li><button onclick="filterVegetables('a')">根菜類</button></li>
+			<li><button onclick="filterVegetables('b')">土物類</button></li>
+			<li><button onclick="filterVegetables('c')">葉茎菜類</button></li>
+			<li><button onclick="filterVegetables('d')">果菜類</button></li>
+			<li><button onclick="filterVegetables('e')">豆科野菜類</button></li>
+			<li><button onclick="filterVegetables('f')">きのこ類</button></li>
+			<li><button onclick="filterVegetables('g')">香辛つま物類</button></li>
+			<li><button onclick="filterVegetables('h')">山菜類</button></li>
+		</ul>
+		<ul id="vegetable-list">
+			<li class="vegetable a">
+				<img src="Z:\HTML\課題研究\野菜\かぶ.jpg" alt="かぶ">
+					<p>※写真はイメージです。</p>
+						<h3>かぶ</h3>
+							<p>かぶは小型の根菜で、白色または淡いピンク色をしています。<br>
+							葉っぱも食べられますが、主に根部が利用され、生でサラダにしたり、鍋料理に使われたりします。<br>
+							甘みがあり、日本の冷奴（冷やした豆腐）に添えられることもあります。</p>
+			</li>
+			<li class="vegetable a">
+				<img src="Z:\HTML\課題研究\野菜\くわい.jpg" alt="くわい">
+					<p>※写真はイメージです。</p>
+						<h3>くわい</h3>
+							<p>くわいは日本の伝統的な野菜で、細長い形をしています。<br>
+							白くてサクサクとした食感が特徴で、薄切りにしてサラダや鍋に入れたり、漬物にしたりします。<br>
+							独特の香りがあり、風味豊かです。</p>
+			</li>
+			<li class="vegetable a">
+				<img src="Z:\HTML\課題研究\野菜\ごぼう.jpg" alt="ごぼう">
+					<p>※写真はイメージです。</p>
+						<h3>ごぼう</h3>
+							<p>ごぼうは細長い根菜で、茶色の外皮を持っています。<br>
+							内部はクリーム色で、サクサクとした食感があります。独特の風味を持ち、<br>
+							切り干し大根の材料として使われたり、煮物や炒め物に加えられたりします。</p>
+			</li>
+			<li class="vegetable a">
+				<img src="Z:\HTML\課題研究\野菜\だいこん.jpg" alt="大根">
+					<p>※写真はイメージです。</p>
+						<h3>大根</h3>
+							<p>大根は白色の根菜で、日本料理において非常に一般的です。<br>
+							生で食べたり、おろし大根として使ったり、煮物や鍋料理に加えたりします。<br>
+							甘みがあり、シャキシャキとした食感があります。</p>
+			</li>
+			<li class="vegetable a">
+				<img src="Z:\25426431_s.jpg" alt="たけのこ">
+					<p>※写真はイメージです。</p>
+						<h3>たけのこ</h3>
+							<p>たけのこは竹の新芽から作られる食材で、日本の春に収穫されます。<br>
+							若いたけのこはシャキシャキとした食感で、竹の風味があります。<br>
+							煮物や天ぷら、炒め物などで使われ、季節限定の味覚として楽しまれます。</p>
+			</li>
+			<li class="vegetable a">
+				<img src="Z:\26130756_s.jpg" alt="にんじん">
+					<p>※写真はイメージです。</p>
+						<h3>にんじん</h3>
+							<p>根菜の代表的な 野菜で、ビタミンやカロチンなどの栄養素が豊富で健康にも良いです。<br>
+								にんじんはオレンジ色の根菜で、甘みがあります。<br>
+								生でサラダに使われたり、煮物やスープに加えられたり、野菜スティックとして食べられたりします。</p>
+			</li>
+			
+			<li class="vegetable a">
+				<img src="Z:\HTML\課題研究\野菜\レンコン.jpg" alt="れんこん">
+					<p>※写真はイメージです。</p>
+						<h3>れんこん</h3>
+							<p>れんこんは白色で、中心部が穴のようになっています。<br>
+							シャキシャキとした歯ごたえがあり、薄切りにしてサラダに入れたり、煮物や炒め物に使われたりします。<br>
+							風味豊かで、特有の食感が特徴です。</p>
+			</li>
+			<li class="vegetable b">
+				<img src="Z:\HTML\課題研究\野菜\さつまいも.jpg" alt="さつまいも">
+					<p>※写真はイメージです。</p>
+						<h3>さつまいも</h3>
+							<p>さつまいもは甘くてねっとりとした食感が特徴の根菜で、<br>
+							日本では焼き芋や甘煮、サラダ、スイーツなど、さまざまな料理に使われます。<br>
+							皮は紫色や赤色を持つこともあります。</p>
+			</li>
+			<li class="vegetable b">
+				<img src="Z:\HTML\課題研究\野菜\さといも.jpg" alt="さといも">
+					<p>※写真はイメージです。</p>
+						<h3>さといも</h3>
+							<p>さといもは白色または淡いクリーム色の根菜で、粘り気がある食感を持ちます。<br>
+							日本では煮物や甘煮、またはからし漬けなどの料理に用いられます。<br>
+							</p>
+			</li>
+			<li class="vegetable b">
+				<img src="Z:\26459663_s.jpg" alt="じゃがいも">
+					<p>※写真はイメージです。</p>
+						<h3>じゃがいも</h3>
+							<p>じゃがいもは世界中で広く栽培されている根菜で、多くの料理に利用されます。<br>
+								日本でもポテトサラダ、から揚げ、グラタン、煮物など幅広い料理で使用されています。</p>
+			</li>
+			<li class="vegetable b">
+				<img src="Z:\HTML\課題研究\野菜\玉ねぎ.jpg" alt="玉ねぎ">
+					<p>※写真はイメージです。</p>
+						<h3>玉ねぎ</h3>
+							<p>玉ねぎは辛味を持つ野菜で、生でサラダにしたり、炒め物やスープのベースとして利用されたりします。<br>
+							また、薄切りにしてからし漬けとしても食べられます。<br>
+							</p>
+			</li>
+			<li class="vegetable b">
+				<img src="Z:\HTML\課題研究\野菜\にんにく.jpg" alt="にんにく">
+					<p>※写真はイメージです。</p>
+						<h3>にんにく</h3>
+							<p>にんにくは辛味があり、強烈な風味を持つ野菜です。<br>
+							みじん切りにして調味料として使われたり、料理に風味を加えるために利用されます。<br>
+							にんにくは多くの健康効果も知られています。</p>
+			</li>
+			<li class="vegetable b">
+				<img src="Z:\HTML\課題研究\野菜\やまいも.jpg" alt="やまいも">
+					<p>※写真はイメージです。</p>
+						<h3>やまいも</h3>
+							<p>やまいもは、甘い風味を持つ根菜で、サラダや煮物、おやき（焼き菓子）などに使われます。<br>
+							一部の種類は紫色の皮を持っています。<br>
+							</p>
+			</li>
+			<li class="vegetable c">
+				<img src="Z:\HTML\課題研究\野菜\アスパラガス.jpg" alt="アスパラガス">
+					<p>※写真はイメージです。</p>
+						<h3>アスパラガス</h3>
+							<p>アスパラガスは細長い緑色の野菜で、シャキシャキとした食感があります。<br>
+							特に春に旬を迎え、焼いたり、茹でたり、サラダに使われます。<br>
+							</p>
+			</li>
+			<li class="vegetable c">
+				<img src="Z:\HTML\課題研究\野菜\カリフラワー.jpg" alt="カリフラワー">
+					<p>※写真はイメージです。</p>
+						<h3>カリフラワー</h3>
+							<p>カリフラワーは白色の花の房を持つ野菜で、多くの料理に使用されます。<br>
+							蒸し焼き、サラダ、ピューレ、ローストなどで食べられます。<br>
+							</p>
+			</li>
+			<li class="vegetable c">
+				<img src="Z:\HTML\課題研究\野菜\キャベツ.jpg" alt="キャベツ">
+					<p>※写真はイメージです。</p>
+						<h3>キャベツ</h3>
+							<p>キャベツは丸い形をした葉菜で、サラダやキムチ、炒め物、スープの具材として広く利用されます。<br>
+							日本では焼きおにぎりの具材としても有名です。<br>
+							</p>
+			</li>
+			<li class="vegetable c">
+				<img src="Z:\HTML\課題研究\野菜\レタス.jpg" alt="レタス">
+					<p>※写真はイメージです。</p>
+						<h3>レタス</h3>
+							<p>美味しくて栄養価も高く、見た目も美しい野菜です。<br>
+					 			規格外でも美味しく食べられます。</p>
+			</li>
+			<li class="vegetable c">
+				<img src="Z:\HTML\課題研究\野菜\小松菜.jpg" alt="小松菜">
+					<p>※写真はイメージです。</p>
+						<h3>小松菜</h3>
+							<p>小松菜は細長い葉を持つ野菜で、サラダやおひたし、炒め物などに使われます。<br>
+							日本の家庭料理でよく見られます。<br>
+							</p>
+			</li>
+			<li class="vegetable c">
+				<img src="Z:\HTML\課題研究\野菜\セロリ.jpg" alt="セロリ">
+					<p>※写真はイメージです。</p>
+						<h3>セロリ</h3>
+							<p>セロリは繊維質の茎と葉を持つ野菜で、生でサラダにしたり、<br>
+							スープの具材として利用されたり、つけ物に使われます。<br>
+							</p>
+			</li>
+			<li class="vegetable c">
+				<img src="Z:\HTML\課題研究\野菜\ニラ.jpg" alt="にら">
+					<p>※写真はイメージです。</p>
+						<h3>にら</h3>
+							<p>にらは細長い葉を持つ野菜で、アジア料理に広く使用されます。<br>
+							炒め物、餃子の具材、スープ、おひたしなどで食べられます。<br>
+							</p>
+			</li>
+			<li class="vegetable c">
+				<img src="Z:\HTML\課題研究\野菜\白菜.jpg" alt="白菜">
+					<p>※写真はイメージです。</p>
+						<h3>白菜</h3>
+							<p>白菜は大きな丸い葉を持つ野菜で、鍋料理（しゃぶしゃぶ、すき焼き）、<br>
+							キムチ、炒め物などに広く使われます。<br>
+							</p>
+			</li>
+			<li class="vegetable c">
+				<img src="Z:\HTML\課題研究\野菜\ブロッコリー.jpg" alt="ブロッコリー">
+					<p>※写真はイメージです。</p>
+						<h3>ブロッコリー</h3>
+							<p>ブロッコリーは緑色の房のような花を持つ野菜で、サラダや蒸し焼き、スープ、パスタなどに使用されます。<br>
+							健康的な食材として知られています。<br>
+							</p>
+			</li>
+			<li class="vegetable c">
+				<img src="Z:\HTML\課題研究\野菜\ほうれんそう.jpg" alt="ほうれん草">
+					<p>※写真はイメージです。</p>
+						<h3>ほうれん草</h3>
+							<p>葉物野菜の代表的な野菜で、鉄分やビタミンなどが豊富で健康にも良い野菜です。,br>
+								規格外でも美味しく食べられます。</p>
+			</li>
+			<li class="vegetable c">
+				<img src="Z:\HTML\課題研究\野菜\もやし.jpg" alt="もやし">
+					<p>※写真はイメージです。</p>
+						<h3>もやし</h3>
+							<p>もやしは豆のスプラウトで、シャキシャキとした食感があります。<br>
+							炒め物や鍋料理、ラーメンのトッピングなどに使われます。<br>
+							</p>
+			</li>
+			<li class="vegetable d">
+				<img src="Z:\HTML\課題研究\野菜\うり.jpg" alt="うり">
+					<p>※写真はイメージです。</p>
+						<h3>うり</h3>
+							<p>うりは緑色で、中に小さな種があります。<br>
+							日本ではさまざまな料理に使われますが、一般的に酢漬けや漬物として食べられることが多いです。<br>
+							</p>
+			</li>
+			<li class="vegetable d">
+				<img src="Z:\HTML\課題研究\野菜\オクラ.jpg" alt="オクラ">
+					<p>※写真はイメージです。</p>
+						<h3>オクラ</h3>
+							<p>オクラは緑色の野菜で、粘り気があります。<br>
+							軽く茹でたり、天ぷらにして食べたり、和え物に使われます。<br>
+							スライスして刺身の具材とすることもあります。</p>
+			</li>
+			</li>
+			<li class="vegetable d">
+				<img src="Z:\25426431_s.jpg" alt="かぼちゃ">
+					<p>※写真はイメージです。</p>
+						<h3>かぼちゃ</h3>
+							<p>かぼちゃはオレンジ色の果実で、甘くて滑らかな食感が特徴です。<br>
+								日本ではカボチャの煮物やスープ、お菓子に使用されます。</p>
+			</li>
+			<li class="vegetable d">
+				<img src="Z:\HTML\課題研究\野菜\きゅうり.jpg" alt="きゅうり">
+					<p>※写真はイメージです。</p>
+						<h3>きゅうり</h3>
+							<p>きゅうりは緑色で、シャキシャキとした食感があります。<br>
+							生でサラダに使われたり、酢の物や漬物に加工されたりします。<br>
+							また、寿司や巻き寿司の具材としてもよく使われます。</p>
+			</li>
+			<li class="vegetable d">
+				<img src="Z:\HTML\課題研究\野菜\ゴーヤ.jpg" alt="ゴーヤ">
+					<p>※写真はイメージです。</p>
+						<h3>ゴーヤ</h3>
+							<p>ゴーヤは緑色で、苦みを持つ野菜です。<br>
+							沖縄料理に特に人気で、ゴーヤチャンプルーやゴーヤの中華炒めなどで使用されます。<br>
+							</p>
+			</li>
+			<li class="vegetable d">
+				<img src="Z:\HTML\課題研究\野菜\トウモロコシ.jpg" alt="トウモロコシ">
+					<p>※写真はイメージです。</p>
+						<h3>トウモロコシ</h3>
+							<p>トウモロコシは黄色い粒を持つ野菜で、焼いたり、茹でたり、バターを塗って食べたりします。<br>
+							夏にバーベキューやフェスティバルで人気です。<br>
+							</p>
+			</li>
+			</li>
+			<li class="vegetable d">
+				<img src="Z:\26294446_s.jpg" alt="トマト">
+					<p>※写真はイメージです。</p>
+						<h3>トマト</h3>
+							<p>トマトは赤色の果実で、生でサラダに使われたり、ソースやスープのベースとして広く利用されます。<br>
+								甘みと酸味が特徴です。</p>
+			</li>
+			<li class="vegetable d">
+				<img src="Z:\HTML\課題研究\野菜\なす.jpg" alt="なす">
+					<p>※写真はイメージです。</p>
+						<h3>なす</h3>
+							<p>なすは紫色や黒色をした野菜で、煮物、炒め物、田楽などに使用されます。<br>
+							特に日本の茄子料理は多彩です。<br>
+							</p>
+			</li>
+			<li class="vegetable d">
+				<img src="Z:\HTML\課題研究\野菜\ピーマン.jpg" alt="ピーマン">
+					<p>※写真はイメージです。</p>
+						<h3>ピーマン</h3>
+							<p>ピーマンは小さな緑色のピーマンで、辛みを持ちます。<br>
+							肉や野菜と炒めたり、唐揚げにしたり、煮物に加えたりします。<br>
+							</p>
+			</li>
+			<li class="vegetable e">
+				<img src="Z:\HTML\課題研究\野菜\枝豆.jpg" alt="枝豆">
+					<p>※写真はイメージです。</p>
+						<h3>枝豆</h3>
+							<p>豆は大豆の若い豆を指します。<br>
+							茹でて塩を振って食べることが一般的で、<br>
+							日本の居酒屋や家庭料理で人気のあるつまみです。</p>
+			</li>
+			<li class="vegetable e">
+				<img src="Z:\HTML\課題研究\野菜\グリンピース.jpg" alt="グリーンピース">
+					<p>※写真はイメージです。</p>
+						<h3>グリーンピース</h3>
+							<p>グリーンピースは小さな緑色の豆で、豆の中に小さな丸い種が入っています。<br>
+							茹でて食べることが多く、ご飯に添えたり、スープに入れたりします。<br>
+							</p>
+			</li>
+			<li class="vegetable e">
+				<img src="Z:\HTML\課題研究\野菜\さやいんげん.jpg" alt="さやいんげん">
+					<p>※写真はイメージです。</p>
+						<h3>さやいんげん</h3>
+							<p>さやいんげんは長い平らなさやの中に小さな豆が詰まっています。<br>
+							茹でたり、炒め物に使ったり、サラダに加えたりします。<br>
+							</p>
+			</li>
+			<li class="vegetable e">
+				<img src="Z:\HTML\課題研究\野菜\さやえんどう.jpg" alt="さやえんどう">
+					<p>※写真はイメージです。</p>
+						<h3>さやえんどう</h3>
+							<p>さやえんどうは大きなさやの中に小さな豆が入っています。<br>
+							茹でたり、炒め物に使ったり、カレーやシチューに加えたりします。<br>
+							</p>
+			</li>
+			<li class="vegetable e">
+				<img src="Z:\HTML\課題研究\野菜\ソラマメ.jpg" alt="そらまめ">
+					<p>※写真はイメージです。</p>
+						<h3>そらまめ</h3>
+							<p>そらまめはさやいんげんに似ていますが、より大きなさやに入った大きな豆を持っています。<br>
+							さやをゆでて食べたり、炒め物に使ったりします。<br>
+							</p>
+			</li>
+			<li class="vegetable f">
+				<img src="Z:\HTML\課題研究\野菜\えのきだけ.jpg" alt="えのきだけ">
+					<p>※写真はイメージです。</p>
+						<h3>えのきだけ</h3>
+							<p>えのきだけは細長いきのこで、淡い茶色をしています。<br>
+							シャキシャキとした食感があり、スープや炒め物、鍋料理によく使われます。<br>
+							</p>
+			</li>
+			<li class="vegetable f">
+				<img src="Z:\HTML\課題研究\野菜\エリンギ.jpg" alt="エリンギ">
+					<p>※写真はイメージです。</p>
+						<h3>エリンギ</h3>
+							<p>エリンギは白色から淡褐色のきのこで、優れた食材として広く認識されています。<br>
+							サラダや炒め物、ステーキのソースとして使用されます。<br>
+							</p>
+			</li>
+			<li class="vegetable f">
+				<img src="Z:\HTML\課題研究\野菜\きくらげ.jpg" alt="きくらげ">
+					<p>※写真はイメージです。</p>
+						<h3>きくらげ</h3>
+							<p>きくらげは黒い平べったいきのこで、水に戻してから調理に使用されます。<br>
+							主に煮物や炒め物に加えられ、食感と風味を向上させます。<br>
+							</p>
+			</li>
+			<li class="vegetable f">
+				<img src="Z:\HTML\課題研究\野菜\しいたけ.jpg" alt="しいたけ">
+					<p>※写真はイメージです。</p>
+						<h3>しいたけ</h3>
+							<p>しいたけは小さな茶色のきのこで、日本で広く利用されています。<br>
+							焼き物、炒め物、スープに加えたり、刺身の盛り合わせに使われたりします。<br>
+							</p>
+			</li>
+			<li class="vegetable f">
+				<img src="Z:\HTML\課題研究\野菜\しめじ.jpg" alt="しめじ">
+					<p>※写真はイメージです。</p>
+						<h3>しめじ</h3>
+							<p>しめじは小さな白いきのこで、日本のスープや炒め物、鍋料理によく使われます。<br>
+							柔らかい食感と優しい風味が特徴です。<br>
+							</p>
+			</li>
+			<li class="vegetable f">
+				<img src="Z:\HTML\課題研究\野菜\なめこ.jpg" alt="なめこ">
+					<p>※写真はイメージです。</p>
+						<h3>なめこ</h3>
+							<p>なめこは小さな茶色のきのこで、スープや鍋料理に加えたり、和え物に使われます。<br>
+							食感が独特で、ほのかな甘みがあります。<br>
+							</p>
+			</li>
+			<li class="vegetable f">
+				<img src="Z:\HTML\課題研究\野菜\まつたけ.jpg" alt="まつたけ">
+					<p>※写真はイメージです。</p>
+						<h3>まつたけ</h3>
+							<p>まつたけは小さな茶色のきのこで、山菜としても知られています。<br>
+							煮物や炒め物、鍋料理に加えられ、風味豊かな野菜として楽しまれます。<br>
+							</p>
+			</li>
+			<li class="vegetable g">
+				<img src="Z:\HTML\課題研究\野菜\カイワレ大根.jpg" alt="かいわれ大根">
+					<p>※写真はイメージです。</p>
+						<h3>かいわれ大根</h3>
+							<p>かいわれ大根は大根の根部を薄切りにした野菜で、辛味があります。<br>
+							日本のおろし大根として使われ、刺身や天ぷらと一緒に食べられます。<br>
+							</p>
+			</li>
+			<li class="vegetable g">
+				<img src="Z:\HTML\課題研究\野菜\しそ.jpg" alt="シソ">
+					<p>※写真はイメージです。</p>
+						<h3>シソ</h3>
+							<p>シソは香り高い葉物の野菜で、日本料理では巻き寿司や刺身、サラダ、天ぷらに使われます。<br>
+							青しそと紅しそがあり、風味が異なります。<br>
+							</p>
+			</li>
+			<li class="vegetable g">
+				<img src="Z:\HTML\課題研究\野菜\しょうが.jpg" alt="しょうが">
+					<p>※写真はイメージです。</p>
+						<h3>しょうが</h3>
+							<p>しょうがは辛味と風味がある根茎野菜で、生姜とも呼ばれます。<br>
+							生で薄切りにして刺身や料理のトッピングに使われたり、料理の風味付けに広く使用されます。<br>
+							</p>
+			</li>
+			<li class="vegetable g">
+				<img src="Z:\HTML\課題研究\野菜\とうがらし.jpg" alt="とうがらし">
+					<p>※写真はイメージです。</p>
+						<h3>とうがらし</h3>
+							<p>とうがらしは辛味のある唐辛子で、色々な料理に辛味を加えるために使用されます。<br>
+							唐辛子の種類により辛さが異なります。<br>
+							</p>
+			</li>
+			<li class="vegetable g">
+				<img src="Z:\HTML\課題研究\野菜\みょうが.jpg" alt="みょうが">
+					<p>※写真はイメージです。</p>
+						<h3>みょうが</h3>
+							<p>みょうがは爽やかな風味を持つ野菜で、<br>
+							生のまま薄切りにして刺身やサラダに使われたり、寿司の添え物として使われます。<br>
+							また、酢の物や漬物にも加えられます。</p>
+			</li>
+			<li class="vegetable h">
+				<img src="Z:\HTML\課題研究\野菜\うど.jpg" alt="うど">
+					<p>※写真はイメージです。</p>
+						<h3>うど</h3>
+							<p>うどは山野から採取される山菜で、日本の春に季節限定で楽しまれます。<br>
+							茹でたり、炒め物に使ったり、天ぷらにして食べられます。<br>
+							山菜の中でも特に人気があります。</p>
+			</li>
+			<br>
+			<br>
+			<br>
+			<br>
+			
+			
+		</ul>
+
+	</section>
+	<script>
+	// 野菜の絞り込み関数
+	function filterVegetables(vegetableType) {
+		const vegetables = document.querySelectorAll('.vegetable');
+		
+			vegetables.forEach((vegetable) => {
+				if (vegetableType === 'all' || vegetable.classList.contains(vegetableType)) {
+					vegetable.style.display = 'block';
+				} else {
+					vegetable.style.display = 'none';
+				}
+			});
+		}
+	</script>
+             </body>
+            </div>
+            <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+            <script src="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/5-6/js/5-6.js"></script>
+           <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+           <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/8-2-1/js/8-2-1.js"></script>
+           <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+           <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.min.js"></script>
+           <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-1/js/6-2-1.js"></script>
+           <script src="kaken.js"></script>
+            
