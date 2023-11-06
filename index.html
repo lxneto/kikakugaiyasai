@@ -123,24 +123,25 @@
             </section>
             <section id="contact">
                 <h2>お問い合わせ</h2>
-                <form ACTION="https://cgi.www.ne.jp/cgi-bin/formdecode.cgi" METHOD="POST">
-                <input type="hidden" NAME="_to" VALUE="s21603ka@mito-th.ibk.ed.jp">
-                <input type="hidden" NAME="_subject" VALUE="フォームデコードより">
-                
-                    <div>
-                        <label for="name">お名前：</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div>
-                        <label for="email">メールアドレス：</label>
-                        <input type="hidden" NAME="_from" VALUE="test@asahi-net.or.jp;>
-                    </div>
-                    <div>
-                        <label for="content">お問い合わせ内容：</label>
-                        <textarea id="content" name="content" required></textarea>
-                    </div>
-                    <button type="submit">送信</button>
-                </form>
+                div class="Form">
+ 					<div class="Form-Item">
+   				 <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>氏名</p>
+    				<input type="text" class="Form-Item-Input" placeholder="例）山田太郎">
+  				</div>
+  				<div class="Form-Item">
+   			 <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>電話番号</p>
+    			<input type="text" class="Form-Item-Input" placeholder="例）000-0000-0000">
+ 			 </div>
+  			<div class="Form-Item">
+    		<p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>メールアドレス</p>
+	    		<input type="email" class="Form-Item-Input" placeholder="例）example@gmail.com">
+			  </div>
+  			<div class="Form-Item">
+   			 <p class="Form-Item-Label isMsg"><span class="Form-Item-Label-Required">必須</span>お問い合わせ内容</p>
+   	 		<textarea class="Form-Item-Textarea"></textarea>
+  			</div>
+  			<input type="submit" class="Form-Btn" value="送信する">
+			</div>
             </section>
              
             </div>
